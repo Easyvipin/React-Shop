@@ -1,10 +1,20 @@
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import { Container } from "react-bootstrap";
+import HomeScreen from "./Screens/HomeScreen";
 
 const App = () => {
   return (
-    <div className="App">
-      heeei
-    </div>
+    <>
+      <Header />
+      <main className="py-2">
+        <Container>
+          <HomeScreen />
+        </Container>
+      </main>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
